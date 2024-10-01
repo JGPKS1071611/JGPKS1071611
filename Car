@@ -1,0 +1,93 @@
+import turtle
+
+# Create a Turtle object
+t = turtle.Turtle()
+
+# Draw the body of the car
+t.penup()
+t.goto(0, 50)
+t.pendown()
+t.goto(0, 100)
+t.penup()
+t.goto(0, 50)
+t.pendown()
+t.goto(75, 50)
+t.goto(100, 75)
+t.penup()
+t.goto(0, 100)
+t.pendown()
+t.goto(75, 100)
+t.goto(100, 75)
+
+# Draw the wheels of the car
+t.penup()
+t.goto(25, 25)
+t.pendown()
+t.circle(25)
+t.penup()
+t.goto(75, 25)
+t.pendown()
+t.circle(25)
+
+# Draw the windows and headlights of the car
+t.penup()
+t.goto(15, 100)
+t.pendown()
+t.goto(60, 100)
+t.goto(75, 75)
+t.goto(60, 50)
+t.goto(15, 50)
+t.goto(0, 75)
+t.goto(15, 100)
+t.penup()
+t.goto(90, 75)
+t.dot(10)
+
+# Add color to the car
+t.fillcolor("red")
+t.begin_fill()
+t.penup()
+t.goto(0, 50)
+t.pendown()
+t.goto(0, 100)
+t.goto(75, 100)
+t.goto(100, 75)
+t.goto(75, 50)
+t.goto(0, 50)
+t.end_fill()
+
+t.fillcolor("black")
+t.begin_fill()
+t.penup()
+t.goto(25, 25)
+t.pendown()
+t.circle(25)
+t.penup()
+t.goto(75, 25)
+t.pendown()
+t.circle(25)
+t.end_fill()
+
+t.pencolor("white")
+
+# draw windows
+
+t.penup()
+t.goto(15, 50)
+t.pendown()
+t.goto(60, 50)
+t.penup()
+t.goto(15, 100)
+t.pendown()
+t.goto(60, 100)
+
+#hide the turtle 
+
+t.hideturtle()
+
+turtle.done()
+
+
+
+
+
